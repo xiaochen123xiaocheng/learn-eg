@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#wordsContainer {
+    margin-bottom: 20px;
+}
+
+.wordButton {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px; /* 圆形按钮 */
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px; /* 使数字垂直居中 */
+    font-size: 14px;
+    overflow: hidden;
+    transition: background-color 0.3s, border-color 0.3s; /* 平滑过渡效果 */
+}
+
+.wordButton.correct {
+    background-color: #4CAF50; /* 正确时的绿色 */
+    border-color: #4CAF50;
+}
+
+.wordButton.incorrect {
+    background-color: #F44336; /* 错误时的红色 */
+    border-color: #F44336;
+}
+
+#wordPrompt {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#inputAnswer {
+    width: calc(100% - 22px); /* 减去边框和内边距的宽度 */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+#submitAnswer {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 平滑过渡效果 */
+}
+
+#submitAnswer:hover {
+    background-color: #0b7dda; /* 鼠标悬停时的颜色变化 */
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 16px;
+}
